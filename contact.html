@@ -17,11 +17,10 @@
 	<!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="css/style.production.css">
 
-	<title>Contact Shannon Martin</title>
+	<title>Contact | Shannon Martin</title>
 </head>
 
 <body>
-
 	<header class="page-header">
 		<img src="img/logo.png" class="page-header__item" alt="Shannon Martin Portfolio Logo">
 
@@ -47,40 +46,52 @@
 		<h1 class="contact-header">Contact Me</h1>
 
 		<div class="contact-info">
-			<!--
-				The Phone Number is shown for the purpose of the third exercise's task
-				The Phone Number will be removed and will be for request only
-			-->
 			<p>Email me: <a href="mailto:smmartin.art@gmail.com">smmartin.art@gmail.com</a></p>
-			<!--<p>Phone Number: <a href="tel:+12679073611">+1 (267) 907-3611</a></p>-->
-			<p>Phone Number is upon request.</p>
 
-			<!--Call to Action-->
-			<a href="mailto:smmartin.art@gmail.com">Contact Me</a>
+			<!--Both my phone number and resume are for request due to safety reasons-->
+			<p>Phone Number and Resume are upon request.</p>
+			<p>Please note: for anyone outside the US, I cannot make international calls at this time.</p>
 		</div>
 
-		<form action="" method="get" id="contact-form">
-			<label for="contact-email">Email: </label>
-			<input id="contact-email" type="email" required>
+		<form action="#" method="get" id="contact-form">
+			<table class="contact-table">
+				<tr>
+					<td class="contact-label">
+						<label for="contact-email">Email:</label>
+					</td>
+					<td class="contact-input">
+						<input id="contact-email" type="email" required>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact-label">
+						<label for="contact-tel">Phone Number:</label>
+					</td>
+					<td class="contact-input">
+						<input id="contact-tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact-label">
+						<label for="contact-message">Message: </label>
+					</td>
+					<td class="contact-input">
+						<textarea id="contact-message" maxlength="240" required></textarea>
+					</td>
+				</tr>
+			</table>
 
-			<!--Cannot make international calls-->
-			<label for="contact-tel">Phone Number: </label>
-			<input id="contact-tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-
-			<label for="contact-message">Message: </label>
-			<textarea id="contact-message" maxlength="240" required></textarea>
-
-			<button type="submit">Submit</button>
+			<div class="contact-button">
+				<button type="submit">Submit</button>
+			</div>
 		</form>
 	</main>
 
 	<footer class="page-footer">
-		<p>Find me on</p>
-
+		<p>Find me on:</p>
 		<div class="social-media">
-			<!--Design and color are subject to change once the CSS code is added-->
-			<img src="img/github.svg" alt="Github">
-			<img src="img/linkedin.svg" alt="Linkedin" width="24">
+			<a href="https://github.com/smmartin1" class="social-media__item" target="_blank"><img src="img/github.svg" alt="Github"></a>
+			<a href="https://www.linkedin.com/in/smmartin123/" class="social-media__item" target="_blank"><img src="img/linkedin.svg" alt="Linkedin" width="24"></a>
 		</div>
 	</footer>
 
