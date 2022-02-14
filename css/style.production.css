@@ -11,6 +11,7 @@
 :root{
 	/*Colors*/
 	--background-color: #E6F7FF;
+	--font-color: #1B375E;
 	--link-color: #1B80B3;
 	--link-hover: #5062D4;
 	--link-visited: #6EB2D4;
@@ -30,7 +31,7 @@
 	--grid-display: grid;
 
 	/*Table*/
-	--border: dotted;
+	--border: thin dotted;
 
 	/*Grid*/
 	--grid-gap: 10px;
@@ -52,12 +53,14 @@ h1{
 	font-weight: 700;
 	font-size: 30px;
 	line-height: normal;
+	color: var(--font-color);
 }
 
 h2{
 	font-weight: 900;
 	font-size: 24px;
 	line-height: normal;
+	color: var(--font-color);
 }
 
 .about-header, .works-header, .contact-header{
@@ -68,6 +71,7 @@ h2{
 p{
 	font-size: var(--font-size);
 	line-height: normal;
+	color: var(--font-color);
 }
 
 .about-bio, .contact-info{
@@ -97,7 +101,7 @@ a:active{color: var(--link-active);}
 	display: flex;
 	width: 100%;
 	padding: 20px;
-	border-bottom: dashed;
+	border-bottom: medium dashed #8BB2E8;
 }
 
 .page-header__item{
@@ -136,6 +140,12 @@ a:active{color: var(--link-active);}
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	text-align: var(--alignment);
+	height: 50px;
+}
+
+.social-media{
+	height: 30px;
+	padding: 8px;
 }
 
 .social-media__item{text-decoration: none;}
@@ -150,7 +160,11 @@ a:active{color: var(--link-active);}
 }
 
 table{margin: 40px auto;}
-th, td{font-size: 16px;}
+
+th, td{
+	font-size: 16px;
+	color: var(--font-color);
+}
 
 .skill, .year, .experience{font-weight: 900;}
 
@@ -158,7 +172,6 @@ th, td{font-size: 16px;}
 .year-two, .skill-three, .year-three, .experience-one, .experience-two, .experience-three{
 	padding: 10px;
 	text-align: var(--alignment);
-	border-width: thin;
 }
 
 .skill, .year{border-right: var(--border);}
@@ -177,6 +190,8 @@ th, td{font-size: 16px;}
 .contact-label{text-align: right;}
 
 .contact-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: -40px 0;
 	align-items: var(--alignment);
@@ -184,10 +199,12 @@ th, td{font-size: 16px;}
 }
 
 .button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 50px 0;
-	align-items: center;
-	justify-content: center;
+	align-items: var(--alignment);
+	justify-content: var(--alignment);
 }
 
 button, .button{
