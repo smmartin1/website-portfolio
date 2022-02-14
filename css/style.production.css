@@ -79,7 +79,7 @@ p{
 	margin: 0 15px;
 }
 
-a{
+a:link{
 	font-size: var(--font-size);
 	color: var(--link-color);
 }
@@ -143,12 +143,11 @@ a:active{color: var(--link-active);}
 	height: 50px;
 }
 
-.social-media{
-	height: 30px;
-	padding: 8px;
-}
+.social-media{height: 30px;}
 
 .social-media__item{text-decoration: none;}
+
+.social-media__img{width: 24px;}
 
 .profile{max-width: 700px;}
 
