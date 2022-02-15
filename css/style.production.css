@@ -262,35 +262,35 @@ button:focus,
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   50% {
-    -webkit-transform: translate(0px, 10px);
-    transform: translate(0px, 10px);
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 
   100% {
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
 @keyframes bounce {
-	0% {
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   50% {
-    -webkit-transform: translate(0px, 10px);
-    transform: translate(0px, 10px);
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 
   100% {
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
