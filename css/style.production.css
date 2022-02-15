@@ -11,15 +11,15 @@
 
 :root {
   /* Colors */
-  --background-color: #e6f7ff;
-  --font-color: #1b375e;
-  --link-color: #1b80b3;
-	--link-hover: #5062d4;
-  --link-visited: #6eb2d4;
-  --link-active: #0f4966;
-  --button-color: #81c2c7;
-  --button-text: #fff;
-  --grid-color: #c5d4e8;
+  --background-color: #E6F7FF;
+  --font-color: #1B375E;
+  --link-color: #1B80B3;
+  --link-hover: #5062D4;
+  --link-visited: #6EB2D4;
+  --link-active: #0F4966;
+  --button-color: #81C2C7;
+  --button-text: #FFF;
+  --grid-color: #C5D4E8;
 
   /* Text */
   --font-size: 18px;
@@ -52,14 +52,14 @@ main { margin: 30px auto; }
 
 h1 {
   font-weight: 700;
-	font-size: 30px;
+  font-size: 30px;
   line-height: normal;
   color: var(--font-color);
 }
 
 h2 {
   font-weight: 900;
-	font-size: 24px;
+  font-size: 24px;
   line-height: normal;
   color: var(--font-color);
 }
@@ -67,12 +67,12 @@ h2 {
 .about-header,
 .works-header,
 .contact-header {
-	text-align: var(--alignment);
+  text-align: var(--alignment);
   text-decoration: underline;
 }
 
 p {
-	font-size: var(--font-size);
+  font-size: var(--font-size);
   line-height: normal;
   color: var(--font-color);
 }
@@ -101,12 +101,12 @@ a:visited { color: var(--link-visited); }
 a:active { color: var(--link-active); }
 
 .page-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: medium dashed #8bb2e8;
+  border-bottom: medium dashed #8BB2E8;
 }
 
 .page-header__item {
@@ -137,10 +137,10 @@ a:active { color: var(--link-active); }
 .page-footer {
   margin: 50px;
   clear: both;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -157,7 +157,7 @@ a:active { color: var(--link-active); }
 .profile { max-width: 700px; }
 
 .profile_portrait {
-	float: left;
+  float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
@@ -200,7 +200,7 @@ td {
 .year-two,
 .skill-three,
 .year-three {
-	border-top: var(--border);
+  border-top: var(--border);
   border-right: var(--border);
 }
 
@@ -216,8 +216,8 @@ td {
 .contact-label { text-align: right; }
 
 .contact-button {
-	display: -webkit-box;
-	display: -ms-flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: -40px 0;
   align-items: var(--alignment);
@@ -225,8 +225,8 @@ td {
 }
 
 .button {
-	display: -webkit-box;
-	display: -ms-flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 50px 0;
   align-items: var(--alignment);
@@ -241,7 +241,7 @@ button,
   color: var(--button-text);
   text-decoration: none;
   padding: 10px;
-	border-radius: 4px;
+  border-radius: 4px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s opacity;
   -o-transition: 0.5s opacity;
@@ -303,19 +303,34 @@ button:focus,
 .doll:hover,
 .doll:focus { animation: 2s bounce reverse infinite linear; }
 
-.grid {
-	display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px 10px 200px 10px 200px;
-	grid-template-columns: 200px 200px 200px;
-  grid-gap: var(--grid-gap);
-  justify-content: var(--alignment);
-  align-content: var(--alignment);
+/* start grid fallback */
+.grid__item {
+  display: inline-block;
+  width: auto;
 }
 
-.grid__item {
-  background-color: var(--grid-color);
-  padding: 10px;
+/* end grid fallback */
+
+@supports (display: grid) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 10px 200px 10px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: var(--grid-gap);
+    justify-content: var(--alignment);
+    align-content: var(--alignment);
+  }
+
+  .grid__item {
+    background-color: var(--grid-color);
+    padding: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+  }
 }
 
 .work-description { font-size: 14px; }
@@ -338,7 +353,7 @@ button:focus,
   .grid { grid-gap: var(--grid-gap); }
 
   .grid__item:last-child {
-		grid-column: auto / auto;
+    grid-column: auto / auto;
     grid-row: auto / auto;
   }
 
