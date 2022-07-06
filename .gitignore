@@ -1,2 +1,2 @@
-# ignore
+# ignore log files and databases
 .DS_Store
