@@ -96,7 +96,7 @@ a:focus {
   transition-duration: 0.3s;
 }
 
-a:active { color: var(--link-active); }
+a:active { text-decoration: none; }
 
 .page-header {
   display: -webkit-box;
