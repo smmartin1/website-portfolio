@@ -87,8 +87,9 @@ a:link {
   color: var(--link-color);
 }
 
-a:hover,
-a:focus {
+a:visited{color: var(--link-color);}
+
+a:hover, a:focus {
   color: var(--link-hover);
   text-decoration: none;
   -webkit-transition-duration: 0.3s;
@@ -96,7 +97,10 @@ a:focus {
   transition-duration: 0.3s;
 }
 
-a:active { text-decoration: none; }
+a:active{
+	color: var(--link-active);
+	text-decoration: none;
+}
 
 .page-header {
   display: -webkit-box;
