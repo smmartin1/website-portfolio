@@ -14,7 +14,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 
 	<!--Custom CSS-->
-	<!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="css/style.production.css">
 
 	<title>About | Shannon Martin</title>
@@ -44,35 +43,90 @@
 	</header>
 
 	<main>
-		<h1 class="about-header">Get to Know Me</h1>
+		<div class="get-to-know-me">
+			<h1 class="about-header">Get to Know Me</h1>
 
-		<p class="about-bio">
-			Hello! My name is Shannon Martin. I am a web developer based in Philadelphia, Pa.
-			If you do not see me behind a computer, chances are I am either doing something artsy or aquatic like swimming.
-			I also might have my nose stuck in a book.
-		</p>
+			<img src="img/Profile Picture.jpeg" class="about_portrait" alt="Image of Shannon Martin">
 
+			<p class="about-bio">
+				Hello! My name is Shannon Martin, and I am a Full Stack Web Developer from Philadelphia, PA. 
+				Growing up, I always enjoyed challenging myself with both STEM activities and art, 
+				which led me to major in Computer Science with a concentration in Digital Art in college.
+			</p>
+
+			<br />
+
+			<p class="about-bio facts">
+				When I am not behind a computer, you will probably catch me doing art, swimming, or reading.
+			</p>
+
+			<div class="contact-button">
+				<a href="pdf/Martin-Shannon-Resume.pdf" id="button" target="_blank">View My Resume</a>
+			</div>
+		</div>
+
+		<div class="my-background">
+			<h1 class="about-header">My Background</h1>
+
+			<p class="about-bio about-background">
+				Having a background in Software Engineering, I was able to hone my skills as a team player, while working in a fast-paced environment. 
+				Whether working independently or collaboratively, I strive to achieve customer satisfaction.
+			</p>
+		</div>
+
+		<div class="why-web-development">
+			<h1 class="about-header">Why Web Development?</h1>
+
+			<p class="about-bio about-why">
+				I fell in love with Web Development while taking a class in college which enabled me to combine my passions of art and technology. 
+				I enjoy developing my skills by challenging myself with projects that involve creativity and problem solving. 
+				I am looking for a team that has the same motivation for tackling difficult problems, which lead to satisfying results.
+			</p>
+		</div>
+
+		<h1 class="about-header">Skills</h1>
+		
 		<table>
 			<thead>
-				<tr>
-					<th class="skill">Skills</th>
-					<th class="year">Years of Experience</th>
-					<th class="experience">Level of Experience</th>
+				<tr class="odd">
+					<th class="skill"><b>Skills</b></th>
+					<th class="year"><b>Years of Experience</b></th>
+					<th class="experience"><b>Level of Experience</b></th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="even">
 					<td class="skill-one">HTML</td>
 					<td class="year-one">1</td>
 					<td class="experience-one">Beginner</td>
 				</tr>
-				<tr>
+				<tr class="odd">
 					<td class="skill-two">CSS</td>
 					<td class="year-two">1</td>
 					<td class="experience-two">Beginner</td>
 				</tr>
-				<tr>
+				<tr class="even">
 					<td class="skill-three">JavaScript</td>
+					<td class="year-three">Less than 1</td>
+					<td class="experience-three">Beginner</td>
+				</tr>
+				<tr class="odd">
+					<td class="skill-three">MongoDB</td>
+					<td class="year-three">Less than 1</td>
+					<td class="experience-three">Beginner</td>
+				</tr>
+				<tr class="even">
+					<td class="skill-three">React</td>
+					<td class="year-three">Less than 1</td>
+					<td class="experience-three">Beginner</td>
+				</tr>
+				<tr class="odd">
+					<td class="skill-three">React Native</td>
+					<td class="year-three">Less than 1</td>
+					<td class="experience-three">Beginner</td>
+				</tr>
+				<tr class="even">
+					<td class="skill-three">Angular</td>
 					<td class="year-three">Less than 1</td>
 					<td class="experience-three">Beginner</td>
 				</tr>
@@ -81,7 +135,7 @@
 
 		<!--Goes to the contact page-->
 		<div class="contact-button">
-			<a href="contact.html" class="button">Let's get in touch!</a>
+			<a href="contact.html" id="button">Let's get in touch!</a>
 		</div>
 
 		<!--SVG of lanterns-->
