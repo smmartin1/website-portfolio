@@ -308,6 +308,11 @@ footer {
         border-radius: 10px;
         box-shadow: 10px 10px 20px #1B375E;
     }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
     
     .website-image { width: 280px; }
     
